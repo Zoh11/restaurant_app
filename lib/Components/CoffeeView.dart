@@ -1,4 +1,5 @@
 import 'package:cafe_coffee_app/App_style/app_style.dart';
+import 'package:cafe_coffee_app/Components/pages/detial_container.dart';
 import 'package:cafe_coffee_app/Data/data.dart';
 import 'package:cafe_coffee_app/Home/home.dart';
 import 'package:cafe_coffee_app/model/model.dart';
@@ -15,12 +16,6 @@ class coffeeview extends StatefulWidget {
 
 class _coffeeviewState extends State<coffeeview> {
   var selected = 1;
-  List image = [
-    'assets/images/rect1.png',
-    'assets/images/rect2.png',
-    'assets/images/rect3.png',
-    'assets/images/rect4.png',
-  ];
   Widget buildgategories() {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
@@ -109,7 +104,7 @@ class _coffeeviewState extends State<coffeeview> {
                         Text(
                           coffee.rate.toString(),
                           style: Theme.of(context).textTheme.bodySmall,
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -189,7 +184,19 @@ class _coffeeviewState extends State<coffeeview> {
               ),
               itemBuilder: (context, index) {
                 CoffeModel coffee = coffelist[index];
-                return singleCoffee(coffee);
+
+                return GestureDetector(
+                  onTap: () {
+                    // sub main ek coffee ko click krta hoon tho details page pe
+                    //  arguments: coffee, jaraha hai thek
+                    Navigator.of(context).pushNamedAndRemoveUntil(
+                      DetialPages.routeName,
+                      (route) => true,
+                      arguments: coffee,
+                    );
+                  },
+                  child: singleCoffee(coffee),
+                );
               },
             ),
           ))

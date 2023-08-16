@@ -24,7 +24,9 @@ class Home extends StatelessWidget {
             right: 0,
             child: LocationandSearch(),
           ),
-          Positioned.fill(top: containerheight, child: coffeeview()),
+          Positioned.fill(
+              top: containerheight,
+              child: InkWell(onTap: () {}, child: coffeeview())),
           Positioned(
             top: containerheight - promoheight / 2,
             left: 0,
