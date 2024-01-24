@@ -42,7 +42,8 @@ dependencies:
   readmore: ^2.2.0
   location: ^5.0.2+1
   google_maps_flutter: ^2.4.0
-  
+  firebase_core: ^2.15.1
+  firebase_auth: ^4.7.3
 
 dev_dependencies:
   flutter_test:

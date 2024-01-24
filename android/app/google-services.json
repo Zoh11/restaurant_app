@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "308577736196",
+    "project_id": "coffeapp-33deb",
+    "storage_bucket": "coffeapp-33deb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308577736196:android:3e2d99998a755bc56dc751",
+        "android_client_info": {
+          "package_name": "com.example.coffeeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308577736196-7burom07agu6cn81l2djn2spnveuargs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVFmEZ400SQd9PH4qCp-P6aPQhpBvBHns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308577736196-7burom07agu6cn81l2djn2spnveuargs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
